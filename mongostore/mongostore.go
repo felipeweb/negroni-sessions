@@ -28,7 +28,7 @@ func New(session mgo.Session, database string, collection string, maxAge int, en
 	}
 	return &mongoStore{
 		Codecs:     securecookie.CodecsFromPairs(keyPairs...),
-		Token:      nSessions.NewCookieToken(),
+		Token:      nSessions.NewToken(),
 		session:    session,
 		database:   database,
 		collection: collection,
@@ -56,7 +56,7 @@ type mongoSession struct {
 
 type mongoStore struct {
 	Codecs     []securecookie.Codec
-	Token      nSessions.TokenGetSetter
+	Token      nSessions.Token
 	session    mgo.Session
 	database   string
 	collection string

@@ -6,14 +6,14 @@ import (
 	"github.com/gorilla/sessions"
 )
 
-//TokenGetSetter allows you to save and retrieve a value stored in a cookie
-type TokenGetSetter interface {
+//Token allows you to save and retrieve a value stored in a cookie
+type Token interface {
 	GetToken(req *http.Request, name string) (string, error)
 	SetToken(rw http.ResponseWriter, name, value string, options *sessions.Options)
 }
 
-//NewCookieToken returns the default TokenGetSetter
-func NewCookieToken() TokenGetSetter {
+//NewToken returns the default Token
+func NewToken() Token {
 	return &cookieToken{}
 }
 
