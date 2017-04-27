@@ -34,7 +34,4 @@ func main() {
 
 ~~~
 
-## Contributors
-* [David Bochenski](http://github.com/felipeweb)
-* [Jeremy Saenz](http://github.com/codegangsta)
-* [Deniz Eren](https://github.com/denizeren)
+A fork of [https://github.com/GoIncremental/negroni-sessions](https://github.com/GoIncremental/negroni-sessions)
