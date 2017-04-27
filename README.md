@@ -1,6 +1,7 @@
 # negroni-sessions 
 [![GoDoc](https://godoc.org/github.com/felipeweb/negroni-sessions?status.svg)](http://godoc.org/github.com/felipeweb/negroni-sessions)
 [![Build Status](https://travis-ci.org/felipeweb/negroni-sessions.svg?branch=master)](https://travis-ci.org/felipeweb/negroni-sessions)
+
 Negroni middleware/handler for easy session management.
 
 ## Usage
